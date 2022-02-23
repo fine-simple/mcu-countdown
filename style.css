@@ -225,3 +225,12 @@ div#timeline_container > ul > li:nth-child(even) div.event_date {text-align:left
 div#timeline_container > ul > li:hover div.event_date,div#timeline_container > ul li.active div.event_date {opacity:0.9;}
 div#timeline_container > ul > li:nth-child(odd) div.event_date {right:60px;}
 div#timeline_container > ul > li:nth-child(even) div.event_date {left:60px;}
+
+html,body{
+	scroll-snap-type: y mandatory;
+	scroll-snap-stop: always;
+}
+
+.snap{
+	scroll-snap-align: center;
+}

@@ -1,14 +1,7 @@
-function showNext(li){
-	var $itms=$('div#timeline_container li');
-	$('html,body').stop().animate({ scrollTop: $(li).offset().top-$(li).height() / 3}, 500,function(){
-		$('html,body').stop();
-	});
-}
-
 function movieToElement(movie) {
-    element = `<li class="event active" onmouseover="showNext(this)">
+    element = `<li class="event active" >
                 <div class="event_icn icon-space"></div>
-                <div class="event_content">
+                <div class="event_content snap">
                     <h2>${movie.title} (${movie.days_until} days)</h2>
                     <img src="${movie.poster_url}" alt="${movie.title} poster">
                     <p>
